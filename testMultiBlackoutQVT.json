@@ -1,0 +1,1002 @@
+{
+    "includes": ["baseMultiBlackoutQVT"],
+    "config": {
+        "clock": {
+            "speed": 10.0
+        }
+    },
+    "Actions": [{
+        "ActionID": "CreateStage"
+    },
+    {
+        "ActionID": "SetBillingZipCode",
+        "StageID": 1,
+        "zipcode": "80546"
+    },
+    {
+        "ActionID": "Play",
+        "StageID": 1,
+        "QVT": "http://HTTPResponses/MultiBlackoutQVT/MultiBlackoutQVT.qvt",
+        "startPosition": "0.0s",
+        "itemId": "Blackout Clips",
+        "queryId": ""
+    },
+    {
+        "ActionID": "WaitForEvent",
+        "EventID": "UMSAuthorize",
+        "Timeout": "2s",
+        "StageID": 1
+    },
+    {
+        "ActionID": "WaitForEvent",
+        "EventID": "Playing",
+        "Timeout": "3s",
+        "StageID": 1
+    },
+    {
+        "ActionID": "WaitForEvent",
+        "EventID": "Stopped",
+        "Timeout": "600s",
+        "StageID": 1
+    },
+    {
+        "ActionID": "WaitForEvent",
+        "EventID": "UMSDelete",
+        "Timeout": "5s",
+        "StageID": 1
+    },
+    {
+        "ActionID": "DestroyStage",
+        "StageID": 1
+    }
+    
+    ],
+    "Expected Results": {
+        "Events": [{
+            "EventID": "StartTest",
+            "EventData": "testMultiBlackoutQVT"
+        },
+        {
+            "EventID": "AssetMetadata",
+            "StageID": 1,
+            "EventData": {
+                "AssetGuid": "fb2af20f460c48ec90d41750fc13d4cd",
+                "Duration": 645000000,
+                "ChannelGuid": "null",
+                "BlackoutPresent": true,
+                "Timeshiftable": true,
+                "Title": "Archer",
+                "ChannelName": "fxx",
+                "PublisherId": "CBD46B77",
+                "EntitlementId": "c17c952948ab40cea1eacfe6a9fda3ff",
+                "ProgramGuid": "5998ae8b850341fe9235a6232ea6983e",
+                "QvtUrl": "http://HTTPResponses/MultiBlackoutQVT/MultiBlackoutQVT.qvt",
+                "LiveDelay": 0,
+                "AnchorTime": 0,
+                "BackBumper": 0,
+                "ForwardBumper": 0,
+                "PrePad": 0,
+                "PostPad": 0
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "AssetRequested",
+                "AssetURL": "http://HTTPResponses/MultiBlackoutQVT/MultiBlackoutQVT.qvt",
+                "Position": 0
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "AdRequest",
+                "AdRequestUrl": "http://p-adapt.movetv.com/http://5d40b.s.fwmrm.net/ad/g/1",
+                "AdResponse": "<?xml version=\"1.0\"",
+                "UserAgent": "Mozilla/5.0 (QSP; ; AP; 6.0.0.0)"
+            },
+            "PartialMatchStrings": ["AdRequestUrl", "AdResponse"]
+        },
+        
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "AssetStarted",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "BillingZipCode": "80546",
+                "CDN": "",
+                "CallSign": "",
+                "Duration": 600000,
+                "EpisodeName": "El Contador",
+                "Genre": "Comedy",
+                "ID3Tagged": false,
+                "IsLinear": false,
+                "IsLive": false,
+                "Profile": "",
+                "PublisherAssetID": "PFXX8036214920200301",
+                "Rating": "TV-MA",
+                "Region": "",
+                "SVOD": true,
+                "StartupDuration": 0,
+                "Title": "Archer",
+                "URL": "http://cbd46b77.cdn.cms.movetv.com/cms/publish3/asset/info/fb2af20f460c48ec90d41750fc13d4cd.json",
+                "UsingDynamicAds": true,
+                "ZipCode": ""
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ContentStarted",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd"
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipStarted",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 12,
+                "Duration": 100000
+            }
+        },
+        {
+            "EventID": "ClipTransition",
+            "StageID": 1,
+            "EventData": {
+                "PrevClipType": "None",
+                "NextClipType": "Content",
+                "TransitionOffset": 0
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "AssetPositionChanged",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "StageID": 1
+            },
+            "PartialMatch": true,
+            "Times": "AtLeast(1)"
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipListUpdated",
+                "Clips": [{
+                    "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                    "ClipIndex": 19,
+                    "ClipType": "Content",
+                    "ClipStartOffset": 130000,
+                    "ClipStopOffset": 600000,
+                    "ClipUrl": "http://p-cdn4-1-cg7-vod-cbd46b77.movetv.com/clipslist/vod/428d2df70b934cc7949f28c79795c885/master_5_5_fairplay_.m3u8"
+                }, {
+                    "AssetID": "",
+                    "ClipIndex": 18,
+                    "ClipType": "Blackout",
+                    "ClipStartOffset": 0,
+                    "ClipStopOffset": 5000,
+                    "ClipUrl": ""
+                }, {
+                    "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                    "ClipIndex": 17,
+                    "ClipType": "Content",
+                    "ClipStartOffset": 121000,
+                    "ClipStopOffset": 125000,
+                    "ClipUrl": "http://p-cdn4-1-cg7-vod-cbd46b77.movetv.com/clipslist/vod/428d2df70b934cc7949f28c79795c885/master_5_5_fairplay_.m3u8"
+                }, {
+                    "AssetID": "",
+                    "ClipIndex": 16,
+                    "ClipType": "Ad",
+                    "ClipStartOffset": 0,
+                    "ClipStopOffset": 30000,
+                    "ClipUrl": "http://d82gzzcvbqfq.cloudfront.net/3ee9/bS8xLzM4MTk2My81Ny82MjI2MTA1L1pCUkszOTU0VUhfMTU3OTA0MjI1NF9obHNfMTcz/ODQ5OV8yMjAvWkJSSzM5NTRVSF8xNTc5MDQyMjU0X2hsc18xNzM4NDk5XzIyMC5tM3U4/sling-hls/ad.m3u8"
+                }, {
+                    "AssetID": "",
+                    "ClipIndex": 15,
+                    "ClipType": "Ad",
+                    "ClipStartOffset": 0,
+                    "ClipStopOffset": 15000,
+                    "ClipUrl": "http://d82gzzcvbqfq.cloudfront.net/8770/bS8xLzM4MTk2My85NS82NDE1MzI3LzFSUkIwMzMzMDAwSF8xNTgyNTY4MDQxX2hsc18xODA0/Mzc4XzIyMC8xUlJCMDMzMzAwMEhfMTU4MjU2ODA0MV9obHNfMTgwNDM3OF8yMjAubTN1OA==/sling-hls/ad.m3u8"
+                }, {
+                    "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                    "ClipIndex": 14,
+                    "ClipType": "Content",
+                    "ClipStartOffset": 120000,
+                    "ClipStopOffset": 121000,
+                    "ClipUrl": "http://p-cdn4-1-cg7-vod-cbd46b77.movetv.com/clipslist/vod/428d2df70b934cc7949f28c79795c885/master_5_5_fairplay_.m3u8"
+                }, {
+                    "AssetID": "",
+                    "ClipIndex": 13,
+                    "ClipType": "Blackout",
+                    "ClipStartOffset": 0,
+                    "ClipStopOffset": 20000,
+                    "ClipUrl": ""
+                }, {
+                    "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                    "ClipIndex": 12,
+                    "ClipType": "Content",
+                    "ClipStartOffset": 0,
+                    "ClipStopOffset": 100000,
+                    "ClipUrl": "http://p-cdn4-1-cg7-vod-cbd46b77.movetv.com/clipslist/vod/428d2df70b934cc7949f28c79795c885/master_5_5_fairplay_.m3u8"
+                }]
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipQuartile1",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 12,
+                "Duration": 100000
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipMidway",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 12,
+                "Duration": 100000
+            }
+        },
+        
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipQuartile3",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 12,
+                "Duration": 100000
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipComplete",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 12,
+                "Duration": 100000
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "BlackoutStarted",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "BlackoutReason": "Unknown",
+                "TotalBlackoutTime": 0
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipStarted",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 13,
+                "Duration": 20000
+            }
+        },
+        
+        
+        
+        {
+            "EventID": "ClipTransition",
+            "StageID": 1,
+            "EventData": {
+                "PrevClipType": "Content",
+                "NextClipType": "Blackout",
+                "TransitionOffset": 100
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipQuartile1",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 13,
+                "Duration": 20000
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipMidway",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 13,
+                "Duration": 20000
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipQuartile3",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 13,
+                "Duration": 20000
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipComplete",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 13,
+                "Duration": 20000
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "BlackoutEnded",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "Duration": 19957,
+                "TotalBlackoutTime": 19957
+            }
+        ,
+            "ErrorBoundItems": {
+                "TotalBlackoutTime": "200ms",
+                "Duration": "200ms"
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipStarted",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 14,
+                "Duration": 1000
+            }
+        },
+        
+        {
+            "EventID": "ClipTransition",
+            "StageID": 1,
+            "EventData": {
+                "PrevClipType": "Blackout",
+                "NextClipType": "Content",
+                "TransitionOffset": 120
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipQuartile1",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 14,
+                "Duration": 1000
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipMidway",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 14,
+                "Duration": 1000
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipQuartile3",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 14,
+                "Duration": 1000
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipComplete",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 14,
+                "Duration": 1000
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "AdBreakStarted",
+                "AdBreakID": "1",
+                "AdBreakSequence": 1,
+                "AdCount": 2,
+                "AdType": "MidRoll",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "Duration": 45000
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "AdStarted",
+                "AdBreakID": "1",
+                "AdBreakSequence": 1,
+                "AdCreativeID": 0,
+                "AdID": "",
+                "AdType": "MidRoll",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "Duration": 15000,
+                "RafTrackingUrls": "rafTrackingUrls",
+                "adSequence": 0
+            }
+        },
+        
+        {
+            "EventID": "ClipTransition",
+            "StageID": 1,
+            "EventData": {
+                "PrevClipType": "Content",
+                "NextClipType": "Ad",
+                "TransitionOffset": 121
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "EventData": {
+                "EventType": "AdTracking",
+                "TrackingURLResponse": 200
+            },
+            "PartialMatch": true,
+            "Times": "AtLeast(1)"
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "BlackoutEnded",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "Duration": 19733,
+                "TotalBlackoutTime": 19733
+            }
+         ,
+            "ErrorBoundItems": {
+                "TotalBlackoutTime": "200ms",
+                "Duration": "200ms"
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "AdQuartile1",
+                "AdBreakID": "1",
+                "AdBreakSequence": 1,
+                "AdCreativeID": 0,
+                "AdID": "",
+                "AdType": "MidRoll",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "Duration": 15000,
+                "RafTrackingUrls": "rafTrackingUrls",
+                "adSequence": 0
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "AdMidPoint",
+                "AdBreakID": "1",
+                "AdBreakSequence": 1,
+                "AdCreativeID": 0,
+                "AdID": "",
+                "AdType": "MidRoll",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "Duration": 15000,
+                "RafTrackingUrls": "rafTrackingUrls",
+                "adSequence": 0
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "AdBreakQuartile1",
+                "AdBreakID": "1",
+                "AdBreakSequence": 1,
+                "AdCount": 2,
+                "AdType": "MidRoll",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "Duration": 45000
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "AdQuartile3",
+                "AdBreakID": "1",
+                "AdBreakSequence": 1,
+                "AdCreativeID": 0,
+                "AdID": "",
+                "AdType": "MidRoll",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "Duration": 15000,
+                "RafTrackingUrls": "rafTrackingUrls",
+                "adSequence": 0
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "AdCompleted",
+                "AdBreakID": "1",
+                "AdBreakSequence": 1,
+                "AdCreativeID": 0,
+                "AdID": "",
+                "AdType": "MidRoll",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "Duration": 15000,
+                "RafTrackingUrls": "rafTrackingUrls",
+                "adSequence": 0
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "AdStarted",
+                "AdBreakID": "1",
+                "AdBreakSequence": 1,
+                "AdCreativeID": 0,
+                "AdID": "",
+                "AdType": "MidRoll",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "Duration": 30000,
+                "RafTrackingUrls": "rafTrackingUrls",
+                "adSequence": 0
+            }
+        },
+        
+        {
+            "EventID": "ClipTransition",
+            "StageID": 1,
+            "EventData": {
+                "PrevClipType": "Ad",
+                "NextClipType": "Ad",
+                "TransitionOffset": 136
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "AdQuartile1",
+                "AdBreakID": "1",
+                "AdBreakSequence": 1,
+                "AdCreativeID": 0,
+                "AdID": "",
+                "AdType": "MidRoll",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "Duration": 30000,
+                "RafTrackingUrls": "rafTrackingUrls",
+                "adSequence": 0
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "AdBreakMidPoint",
+                "AdBreakID": "1",
+                "AdBreakSequence": 1,
+                "AdCount": 2,
+                "AdType": "MidRoll",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "Duration": 45000
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "AdMidPoint",
+                "AdBreakID": "1",
+                "AdBreakSequence": 1,
+                "AdCreativeID": 0,
+                "AdID": "",
+                "AdType": "MidRoll",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "Duration": 30000,
+                "RafTrackingUrls": "rafTrackingUrls",
+                "adSequence": 0
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "AdBreakQuartile3",
+                "AdBreakID": "1",
+                "AdBreakSequence": 1,
+                "AdCount": 2,
+                "AdType": "MidRoll",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "Duration": 45000
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "AdQuartile3",
+                "AdBreakID": "1",
+                "AdBreakSequence": 1,
+                "AdCreativeID": 0,
+                "AdID": "",
+                "AdType": "MidRoll",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "Duration": 30000,
+                "RafTrackingUrls": "rafTrackingUrls",
+                "adSequence": 0
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "AdCompleted",
+                "AdBreakID": "1",
+                "AdBreakSequence": 1,
+                "AdCreativeID": 0,
+                "AdID": "",
+                "AdType": "MidRoll",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "Duration": 30000,
+                "RafTrackingUrls": "rafTrackingUrls",
+                "adSequence": 0
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "AdBreakCompleted",
+                "AdBreakID": "1",
+                "AdBreakSequence": 1,
+                "AdCount": 2,
+                "AdType": "MidRoll",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "Duration": 45000
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipStarted",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 17,
+                "Duration": 4000
+            }
+        },
+        {
+            "EventID": "ClipTransition",
+            "StageID": 1,
+            "EventData": {
+                "PrevClipType": "Ad",
+                "NextClipType": "Content",
+                "TransitionOffset": 166
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipQuartile1",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 17,
+                "Duration": 4000
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipMidway",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 17,
+                "Duration": 4000
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipQuartile3",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 17,
+                "Duration": 4000
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipComplete",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 17,
+                "Duration": 4000
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "BlackoutStarted",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "BlackoutReason": "Unknown",
+                "TotalBlackoutTime": 19733
+            }
+            ,
+            "ErrorBoundItems": {
+                "TotalBlackoutTime": "200ms",
+                "Duration": "200ms"
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipStarted",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 18,
+                "Duration": 5000
+            }
+        },
+        {
+            "EventID": "ClipTransition",
+            "StageID": 1,
+            "EventData": {
+                "PrevClipType": "Content",
+                "NextClipType": "Blackout",
+                "TransitionOffset": 170
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipQuartile1",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 18,
+                "Duration": 5000
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipMidway",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 18,
+                "Duration": 5000
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipQuartile3",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 18,
+                "Duration": 5000
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipComplete",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 18,
+                "Duration": 5000
+            }
+        },
+        
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipStarted",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 19,
+                "Duration": 470000
+            }
+        },
+        {
+            "EventID": "ClipTransition",
+            "StageID": 1,
+            "EventData": {
+                "PrevClipType": "Blackout",
+                "NextClipType": "Content",
+                "TransitionOffset": 175
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ContentQuartile1",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd"
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipQuartile1",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 19,
+                "Duration": 470000
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ContentMidPoint",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd"
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipMidway",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 19,
+                "Duration": 470000
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ContentQuartile3",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd"
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipQuartile3",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 19,
+                "Duration": 470000
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ClipComplete",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "ClipCount": 19,
+                "Duration": 470000
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "ContentComplete",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "HasContentCompleted": true
+            }
+        },
+        {
+            "EventID": "AnalyticsEvent",
+            "StageID": 1,
+            "EventData": {
+                "EventType": "AssetEnded",
+                "AssetID": "fb2af20f460c48ec90d41750fc13d4cd",
+                "HasAssetCompleted": true
+            }
+        },
+        {
+            "EventID": "ClipTransition",
+            "StageID": 1,
+            "EventData": {
+                "PrevClipType": "Content",
+                "NextClipType": "None",
+                "TransitionOffset": 645
+            }
+        },
+        
+        
+        {
+            "EventID": "Playing",
+            "StageID": 1,
+            "EventData": {
+                "oldStatus": "Stopped",
+                "newStatus": "Playing"
+            }
+        },
+        {
+            "EventID": "UMSSetHostName"
+        },
+        {
+            "EventID": "UMSAuthorize"
+        },
+        {
+            "EventID": "UMSHeartbeat",
+            "Times": "AtLeast(1)"
+        },
+        {
+            "EventID": "UMSDelete"
+        },
+        
+        {
+            "EventID": "Stopped",
+            "StageID": 1,
+            "EventData": {
+                "oldStatus": "Playing",
+                "newStatus": "Stopped"
+            }
+        },
+        {
+            "EventID": "EndTest"
+        }
+        ]
+    }
+}

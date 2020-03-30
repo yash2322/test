@@ -1,0 +1,476 @@
+{
+"clips": [
+{
+"host_rule": "VOD - dynamux 22001",
+"physical_limit": 600.00,
+"physical_offset": 0,
+"range": "0.000,600.000",
+"segment_id": 55432798,
+"sequence": 0,
+"start": 0,
+"stop": 600.00,
+"tcstart": 0.0,
+"type": "content",
+"url": "http://p-cdn3-1-cg7-vod-cbd46b77.movetv.com/22001/vod/dyn/ce2e0448599411ea8063005056a5bf17/index.qmx"
+}
+],
+"entitlement": {
+"asset_id": "fb2af20f460c48ec90d41750fc13d4cd",
+"created": "2020-02-27T20:24:24Z",
+"entitlement_category": "vod",
+"entitlement_type": "fod",
+"external_id": "c17c952948ab40cea1eacfe6a9fda3ff",
+"name": "Archer [FOD]",
+"offer_start": "2020-03-01T13:01:00Z",
+"offer_stop": "2020-04-01T10:59:00Z",
+"playback_start": "2020-03-01T13:01:00Z",
+"playback_stop": "2020-04-01T10:59:00Z",
+"source_guid": "ef4d3fe68d76509e836d95a8d00ca950",
+"source_id": 376
+},
+"host_rules": [
+{
+"hosts": [
+{
+"balance": 50,
+"cdn": "Level3",
+"host": "p-cdn3-1-cg7-vod-cbd46b77.movetv.com/22001",
+"priority": 1
+},
+{
+"balance": 50,
+"cdn": "Fastly",
+"host": "p-cdn4-1-cg7-vod-cbd46b77.movetv.com/22001",
+"priority": 1
+},
+{
+"balance": 50,
+"cdn": "Fastly",
+"host": "p-cdn4-1-cg7-vod-cbd46b77.movetv.com/22001",
+"priority": 2
+},
+{
+"balance": 50,
+"cdn": "Level3",
+"host": "p-cdn3-1-cg7-vod-cbd46b77.movetv.com/22001",
+"priority": 2
+},
+{
+"balance": 100,
+"cdn": "Level3",
+"host": "p-cdn3-1-cg7-vod-cbd46b77.movetv.com/22001",
+"priority": 3
+},
+{
+"balance": 100,
+"cdn": "Fastly",
+"host": "p-cdn4-1-cg7-vod-cbd46b77.movetv.com/22001",
+"priority": 3
+},
+{
+"balance": 100,
+"cdn": "Akamai",
+"host": "p-cdn1-1-cg7-vod-cbd46b77.movetv.com/22001",
+"priority": 1
+},
+{
+"balance": 100,
+"cdn": "Akamai",
+"host": "p-cdn1-1-cg7-vod-cbd46b77.movetv.com/22001",
+"priority": 2
+},
+{
+"balance": 100,
+"cdn": "Akamai",
+"host": "p-cdn1-1-cg7-vod-cbd46b77.movetv.com/22001",
+"priority": 3
+}
+],
+"id": "VOD - dynamux 22001"
+}
+],
+"playback_info": {
+"regional_blackouts": [
+{
+"type":"billing_location",
+"zip_codes":["80546", "84003", "84058", "84095", "84062","77389","84043"],
+"start_time": 100.000,
+"stop_time": 120.000,
+"image_url": null
+},
+{
+"type":"device_location",
+"zip_codes":["80546", "84003", "84058", "84095", "84062", "84006","77389","28120"],
+"start_time": 100.000,
+"stop_time": 120.000,
+"image_url": null
+},
+{
+"type":"billing_location",
+"zip_codes":["80546", "84003", "84058", "84095", "84062","77389","84043"],
+"start_time": 170.000,
+"stop_time": 175.000,
+"image_url": null
+},
+{
+"type":"device_location",
+"zip_codes":["80546", "84003", "84058", "84095", "84062", "84006","77389","28120"],
+"start_time": 167.000,
+"stop_time": 177.000,
+"image_url": null
+}
+],
+"ad_info": {
+"ad_breaks": [
+{
+"cue_point_number": 1,
+"method": "insert",
+"start_offset": "121.000",
+"stop_offset": "121.000",
+"type": "midroll"
+}
+],
+"ad_replacement_start_time": 0.0,
+"ads_service_type": 0,
+"ads_service_url": "http://p-adapt.movetv.com/http://5d40b.s.fwmrm.net/ad/g/1",
+"channel_name": "fxx",
+"fw_capabilities": {
+"enableServerVastTranslation": "esvt",
+"expectedMultipleCreativeRenditions": "emcr",
+"recordVideoView": "exvt",
+"requiresQuartileCallbackUrls": "qtcb",
+"supportsSlotCallbacks": "slcb"
+},
+"image_url": "http://webapp.movetv.com/config/misc/static/commercial.png",
+"kv_pairs": {
+"_fw_vcid2": "subscriberId",
+"feature": "simpleAds",
+"module": "DemoPlayer"
+},
+"network_id": "381963",
+"on_shorted_ad_break": "truncate",
+"on_start_in_ad_break": "truncate",
+"profile": "381963",
+"programmer_asset_id": "1703388227815",
+"programmer_network_id": "381963",
+"roku_ad_framework": {
+"nielsen_app_id": "P2871BBFF-1A28-44AA-AF68-C7DE4B148C32",
+"nielsen_content_length": 600.00,
+"nielsen_genre": "CV",
+"nielsen_program_id": "El Contador",
+"tracking_url_host_names": [
+"imrworldwide.com",
+"scorecardresearch.com"
+]
+},
+"scte_programmer_asset_id_override": []
+},
+"analytics_info": {
+"adobe": {
+"custom_metadata": {
+"access_type": "dish pss",
+"affiliate_id": "dish pss",
+"asset_id": "fb2af20f460c48ec90d41750fc13d4cd",
+"channel": "FXX",
+"duration": "0:21:51.230000",
+"episode_number": 5,
+"episode_title": "El Contador",
+"original_air_date": "2012-01-26",
+"programmer_id": "fox",
+"publish_date": "2020-03-01T13:01:00Z",
+"publish_day_number": "3",
+"season_number": 3,
+"series_title": "Archer",
+"sunset_date": "2020-04-01T10:59:00Z",
+"tms_id": "EP012167020029",
+"video_platform": "dish pss"
+},
+"device_metadata": {
+"android": {
+"rsid": "dishglobalprod"
+},
+"desktop": {
+"rsid": "dishglobalprod"
+},
+"ios": {
+"rsid": "dishglobalprod"
+},
+"roku": {
+"rsid": "dishglobalprod"
+},
+"rsid": "dishglobalprod",
+"xbox": {
+"rsid": "dishglobalprod"
+}
+},
+"param_metadata": {
+"channel": null,
+"player_name": "dish pss",
+"video_name": null
+}
+},
+"comscore": {
+"custom_metadata": {
+"c2": "17817715",
+"c3": "SLING",
+"c4": "FXX",
+"c6": "Archer",
+"ca2": "*null",
+"ca3": "*null",
+"ca4": "*null",
+"ca6": "*null"
+},
+"param_metadata": {
+"content_id": "0578e1f642ba4f57ae5212f5d034bbb6",
+"content_url": "http://cbd46b77.cdn.cms.movetv.com/cms/publish3/entitlement/asset/c17c952948ab40cea1eacfe6a9fda3ff/fb2af20f460c48ec90d41750fc13d4cd.qvt",
+"episode": "El Contador",
+"program": "Archer",
+"publisher": "FXX"
+}
+},
+"nielsen": {
+"device_metadata": {
+"android": {
+"app_id": "PFB2BAD28-9C1D-1762-E040-070AAC312365",
+"test_app_id": "TFB2BAD28-9C1D-1762-E040-070AAC312365"
+},
+"desktop": {
+"app_id": "P18551FA9-9C9B-4A51-B92C-AE04259DCD94",
+"test_app_id": "T18551FA9-9C9B-4A51-B92C-AE04259DCD94"
+},
+"ios": {
+"app_id": "PFB2BAD28-9C1D-1762-E040-070AAC312365",
+"test_app_id": "TFB2BAD28-9C1D-1762-E040-070AAC312365"
+}
+},
+"param_metadata": {
+"clientidOverride": "APRP608",
+"program_name": "Archer",
+"program_title": "El Contador",
+"sfcode": "US",
+"test_sfcode": "UAT-CERT",
+"vcidOverride": "NA"
+}
+}
+},
+"asset": {
+"_href": "http://cbd46b77.cdn.cms.movetv.com/cms/publish3/asset/info/fb2af20f460c48ec90d41750fc13d4cd.json",
+"channel_guid": null,
+"channel_id": null,
+"episode_title": "El Contador",
+"genre": [
+"Comedy"
+],
+"guid": "fb2af20f460c48ec90d41750fc13d4cd",
+"id": 47531524,
+"publisher_asset_id": "PFXX8036214920200301",
+"rating": [
+"TV-MA"
+],
+"release_date": null,
+"title": "Archer"
+},
+"asset_type": "fod",
+"clips": [
+{
+"host_rule_id": "farallon",
+"location": "http://p-cdn4-1-cg7-vod-cbd46b77.movetv.com/22001/vod/dyn/ce2e0448599411ea8063005056a5bf17/index.qmx",
+"sequence": 0,
+"start_offset": 0,
+"stop_offset": 600.000,
+"type": "content"
+}
+],
+"clips_hosts": [
+"p-sv1-dynclip-1.imovetv.com",
+"p-sv1-dynclip-2.imovetv.com",
+"p-sv1-dynclip-3.imovetv.com"
+],
+"clips_path": "/clipslist/vod/428d2df70b934cc7949f28c79795c885",
+"concurrency_info": {
+"concurrency_service": "UMS",
+"provider": "MISSING (please set the 'provider' metadata on channel(s) with title 'FXXHD')"
+},
+"content_type": "svod",
+"dash_manifest_url": "http://p-cdn4-1-cg7-vod-cbd46b77.movetv.com/clipslist/vod/428d2df70b934cc7949f28c79795c885.mpd",
+"device_restrictions": null,
+"entitlement_id": "c17c952948ab40cea1eacfe6a9fda3ff",
+"host_rules": [
+{
+"description": "",
+"hosts": [
+{
+"balance": 33,
+"cdn": "Fastly",
+"host": "p-cdn4-1-cg7-vod-cbd46b77.movetv.com",
+"priority": 2
+},
+{
+"balance": 34,
+"cdn": "Fastly",
+"host": "p-cdn4-1-cg7-vod-cbd46b77.movetv.com",
+"priority": 1
+},
+{
+"balance": 33,
+"cdn": "Level3",
+"host": "p-cdn3-1-cg7-vod-cbd46b77.movetv.com",
+"priority": 1
+},
+{
+"balance": 34,
+"cdn": "Level3",
+"host": "p-cdn3-1-cg7-vod-cbd46b77.movetv.com",
+"priority": 2
+},
+{
+"balance": 33,
+"cdn": "Akamai",
+"host": "p-cdn1-1-cg7-vod-cbd46b77.movetv.com",
+"priority": 1
+},
+{
+"balance": 33,
+"cdn": "Akamai",
+"host": "p-cdn1-1-cg7-vod-cbd46b77.movetv.com",
+"priority": 2
+}
+],
+"id": "farallon"
+}
+],
+"id3_tagged": false,
+"live_m3u8_url_template": "unknown",
+"m3u8_url_template": "http://p-cdn4-1-cg7-vod-cbd46b77.movetv.com/clipslist/vod/428d2df70b934cc7949f28c79795c885/master_$version$_$target_duration$_$encryption_type$_$audio_type$.m3u8",
+"publisher_id": "CBD46B77",
+"qvt_kind": "entitlement",
+"restrictions": {
+"adbreaks_on_seek": "last",
+"allow_seek_past_furthest_position": true,
+"concurrency_service": "UMS",
+"dvr_adbreaks_on_seek": false,
+"entitlement_category": "vod",
+"entitlement_type": "fod",
+"lookback_adbreaks_on_seek": "last",
+"max_streams": null,
+"resolution": null,
+"verified_play": true
+},
+"version": 2,
+"vod_info": {
+"program_guid": "5998ae8b850341fe9235a6232ea6983e",
+"svod_channels": [
+"41a4e693f9cc45cb8b6b5813f01ced31"
+]
+},
+"yaml_configuration_version": {
+"FOX_FX_TEMPLATE": 1,
+"FOX_TEMPLATE": 2,
+"channel_title": "FXXHD",
+"channels.yaml": "last modified 2020-02-19T17:51:24Z",
+"key_list": {
+"channel": [
+"channel",
+"FXXHD",
+"playback_info"
+],
+"postconfig": [
+"postconfig",
+"entitlement",
+"playback_info"
+],
+"preconfig": [
+"preconfig",
+"entitlement",
+"playback_info"
+]
+},
+"postconfig.entitlement": 3,
+"preconfig.entitlement": 1,
+"tag": "v115"
+}
+},
+"publish_version": "8.27.0+402",
+"publisher_id": "CBD46B77",
+"resume_type": "fod",
+"schema_version": "1.2.4",
+"self": "http://cbd46b77.cdn.cms.movetv.com/cms/publish3/entitlement/asset/c17c952948ab40cea1eacfe6a9fda3ff/fb2af20f460c48ec90d41750fc13d4cd.qvt",
+"shows": [
+{
+"ad_markers": {
+"ads": [
+[
+"P0D",
+"P0D"
+],
+[
+"PT3M12.2S",
+"PT3M12.2S"
+],
+[
+"PT7M30.467S",
+"PT7M30.467S"
+],
+[
+"PT14M35.868S",
+"PT14M35.868S"
+],
+[
+"PT21M50.901S",
+"PT21M50.901S"
+]
+]
+},
+"adult": false,
+"asset_id": 47531524,
+"asset_type": "uploaded",
+"clips": [
+{
+"host_rule": "VOD - dynamux 22001",
+"physical_limit": 600.00,
+"physical_offset": 0,
+"range": "0.000,600.000",
+"segment_id": 55432798,
+"sequence": 0,
+"start": 0,
+"stop": 600.00,
+"tcstart": 0.0,
+"type": "content",
+"url": "http://p-cdn3-1-cg7-vod-cbd46b77.movetv.com/22001/vod/dyn/ce2e0448599411ea8063005056a5bf17/index.qmx"
+}
+],
+"created": "2020-02-27T20:24:24Z",
+"external_id": "fb2af20f460c48ec90d41750fc13d4cd",
+"forced_gap": {},
+"language": "English",
+"last_modified": "2020-02-28T10:14:32Z",
+"offered": true,
+"otype": "asset_syndicated",
+"publisher_id": "CBD46B77",
+"ratings": [
+"US_UPR_TV-MA"
+],
+"release_year": 2003,
+"rt_score": null,
+"schedule_type": "none",
+"searchable": true,
+"source_id": 376,
+"start": "0.000",
+"state": 4,
+"thumbnail": {
+"h": 1152,
+"url": "http://p-img.movetv.com/cms/images/c1f4980bdd5d83359334f5191baa6311786cfb28.jpg",
+"w": 2048
+},
+"timeshiftable": true,
+"title": "Archer",
+"vendor_content_id": "PFXX8036214920200301",
+"vendor_data": {
+"show_id": "1703388227815"
+},
+"vod": "false"
+}
+],
+"verified_play": true,
+"vod": true
+}

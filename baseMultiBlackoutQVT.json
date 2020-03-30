@@ -1,0 +1,63 @@
+
+
+{
+    "includes" : ["baseUMS", "baseAdobeAnalytics"],
+    "config" :
+    {
+        "network" :
+        {
+            "requests" :
+            [
+                {
+                    "URL" : "http://HTTPResponses/MultiBlackoutQVT/MultiBlackoutQVT.qvt",
+                    "ResponseCode" : 200,
+                    "Body" : "{$NETWORK_ROOT_PATH}/HTTPResponses/MultiBlackoutQVT/MultiBlackoutQVT.qvt",
+                    "Times" : -1
+                },
+                {
+                    "URL" : "http://p-cdn4-1-cg7-vod-cbd46b77.movetv.com/22001/vod/dyn/ce2e0448599411ea8063005056a5bf17/index.qmx",
+                    "ResponseCode" : 200,
+                    "Body" : "{$NETWORK_ROOT_PATH}/HTTPResponses/MultiBlackoutQVT/index.qmx",
+                    "Times" : -1
+                },
+                {
+                    "URL" : "http://p-adapt.movetv.com/http://5d40b.s.fwmrm.net/ad/g/1",
+                    "MatchURLQuery" : false,
+                    "ResponseCode" : 200,
+                    "RequestType" : "GET",
+                    "Times" : -1,
+                    "Body" : "{$NETWORK_ROOT_PATH}/HTTPResponses/MultiBlackoutQVT/adapt-response.txt"
+                },
+                {
+                    "URL" : "http://5d40b.s.fwmrm.net/ad/l/1",
+                    "MatchURLQuery" : false,
+                    "ResponseCode" : 200,
+                    "RequestType" : "GET",
+                    "Times" : -1,
+                    "Body" : "{$NETWORK_ROOT_PATH}/HTTPResponses/MultiBlackoutQVT/adapt-response.txt"
+                },
+                {
+                    "URL" : "https://5d40b.s.fwmrm.net/ad/l/1",
+                    "MatchURLQuery" : false,
+                    "ResponseCode" : 200,
+                    "RequestType" : "GET",
+                    "Times" : -1,
+                },
+                {
+                    "URL" : "http://p-cg64-beaconserver.movetv.com/adapt",
+                    "MatchURLQuery" : false,
+                    "ResponseCode" : 200,
+                    "RequestType" : "GET",
+                    "Times" : -1,
+                },
+                {
+                    "URL" : "http://p-cg61-beaconserver.movetv.com/adapt",
+                    "MatchURLQuery" : false,
+                    "ResponseCode" : 200,
+                    "RequestType" : "GET",
+                    "Times" : -1,
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<vmap:VMAP xmlns:vmap="http://www.iab.net/vmap-1.0" version="1.0">
+<vmap:AdBreak timeOffset="end" breakId="0" breakType="linear">
+<vmap:AdSource allowMultipleAds="true" followRedirects="true" id="1">
+<vmap:VASTAdData>
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:noNamespaceSchemaLocation="vast.xsd">
+<Ad id="40212591.140521293951744" sequence="1">
+<InLine>
+<AdSystem>FreeWheel</AdSystem>
+<AdTitle>RedRobin_RedRobin_1Q20_Sling_DR_DM#159787_15sCreative_3.9-3.15</AdTitle>
+<Error><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=40212591&reid=24492825&arid=0&iw=&uxnw=&uxss=&uxct=&et=e&cn=%5BERRORCODE%5D]]></Error>
+<Impression id="FWi_40212591.0"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=40212591&reid=24492825&arid=0&auid=&cn=defaultImpression&et=i&_cc=40212591,24492825,,33365.33865.34932.40029.46121.46630.46944.46945.46946.46947.46948.47836.,1583791760,1&tpos=0&iw=&uxnw=&uxss=&uxct=&metr=1031&init=1&asid=-1&ssid=1722804&vcid2=381963%3A0da57b7e-dea4-11e7-9ec7-0e45ba4fa8d8&cr=]]></Impression>
+<Impression id="60735cdc-bc6f-4dbc-8115-00362e400de6"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=15000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_IMPRESSION&adId=40212591&responseFormat=VMAP&id=60735cdc-bc6f-4dbc-8115-00362e400de6&sign=SZEVobM2_MIeQfraBj9wZj-5EqJjdgo4sCTnGC4v8N8]]></Impression>
+<Creatives>
+<Creative AdID="40212591" id="6415327">
+<Linear>
+<Duration>00:00:15</Duration>
+<TrackingEvents>
+<Tracking event="complete"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=40212591&reid=24492825&arid=0&auid=&cn=complete&et=i&_cc=&tpos=0&init=1&iw=&uxnw=&uxss=&uxct=&metr=1031]]></Tracking>
+<Tracking id="04cf8ba0-82ee-45f1-a822-c6e4cfe73e3d" event="complete"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=15000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_COMPLETE&adId=40212591&responseFormat=VMAP&id=04cf8ba0-82ee-45f1-a822-c6e4cfe73e3d&sign=Q8jiWzjQet0Vw0MTuRZMnI0a-xwoKfwpEdUgKvhvPok]]></Tracking>
+<Tracking event="firstQuartile"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=40212591&reid=24492825&arid=0&auid=&cn=firstQuartile&et=i&_cc=&tpos=0&init=1&iw=&uxnw=&uxss=&uxct=&metr=1031]]></Tracking>
+<Tracking id="2d53c553-77ae-4c04-8d56-837aae9886bb" event="firstQuartile"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=15000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_FIRST_QUARTILE&adId=40212591&responseFormat=VMAP&id=2d53c553-77ae-4c04-8d56-837aae9886bb&sign=bX9Ga8kKgOVpZJaofMfUG0jwOFjYqybuQVepVhmTW88]]></Tracking>
+<Tracking event="midpoint"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=40212591&reid=24492825&arid=0&auid=&cn=midPoint&et=i&_cc=&tpos=0&init=1&iw=&uxnw=&uxss=&uxct=&metr=1031]]></Tracking>
+<Tracking id="5110adc6-9c0c-4bff-bef0-bc14736002b3" event="midpoint"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=15000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_MIDPOINT&adId=40212591&responseFormat=VMAP&id=5110adc6-9c0c-4bff-bef0-bc14736002b3&sign=Fm6DcoZQELw3D_n6hbJCA5NpB-J91JHCDjDThIcmujw]]></Tracking>
+<Tracking event="thirdQuartile"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=40212591&reid=24492825&arid=0&auid=&cn=thirdQuartile&et=i&_cc=&tpos=0&init=1&iw=&uxnw=&uxss=&uxct=&metr=1031]]></Tracking>
+<Tracking id="34d4cd0d-d754-4fd6-9f12-24969b32651c" event="thirdQuartile"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=15000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_THIRD_QUARTILE&adId=40212591&responseFormat=VMAP&id=34d4cd0d-d754-4fd6-9f12-24969b32651c&sign=Y1krk46fIiEN95C4NxUdGMklE_y3rTX7ToUgZJK9Cdo]]></Tracking>
+</TrackingEvents>
+<VideoClicks>
+<ClickTracking id="FWc_40212591.0"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=40212591&reid=24492825&arid=0&auid=&cn=defaultClick&et=c&_cc=&tpos=0&cr=]]></ClickTracking>
+</VideoClicks>
+<MediaFiles>
+<MediaFile height="0" width="0" type="application/x-mpegURL" id="24492846" delivery="streaming"><![CDATA[http://d82gzzcvbqfq.cloudfront.net/8770/bS8xLzM4MTk2My85NS82NDE1MzI3LzFSUkIwMzMzMDAwSF8xNTgyNTY4MDQxX2hsc18xODA0/Mzc4XzIyMC8xUlJCMDMzMzAwMEhfMTU4MjU2ODA0MV9obHNfMTgwNDM3OF8yMjAubTN1OA==/sling-hls/ad.m3u8]]></MediaFile>
+</MediaFiles>
+</Linear>
+</Creative>
+</Creatives>
+</InLine>
+</Ad>
+</VAST>
+</vmap:VASTAdData>
+</vmap:AdSource>
+<vmap:TrackingEvents>
+<vmap:Tracking event="breakStart"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&cn=slotImpression&et=i&tpos=0&init=1&slid=0]]></vmap:Tracking>
+</vmap:TrackingEvents>
+</vmap:AdBreak>
+<vmap:AdBreak timeOffset="00:05:00.000" breakId="1" breakType="linear">
+<vmap:AdSource allowMultipleAds="true" followRedirects="true" id="2">
+<vmap:VASTAdData>
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:noNamespaceSchemaLocation="vast.xsd">
+<Ad id="40212592.140521293952512" sequence="1">
+<InLine>
+<AdSystem>FreeWheel</AdSystem>
+<AdTitle>RedRobin_RedRobin_1Q20_Sling_DR_DM#159787_15sCreative_3.9-3.15</AdTitle>
+<Error><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=40212592&reid=24492825&arid=0&iw=&uxnw=&uxss=&uxct=&et=e&cn=%5BERRORCODE%5D]]></Error>
+<Impression id="FWi_40212592.0"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=40212592&reid=24492825&arid=0&auid=&cn=defaultImpression&et=i&_cc=40212592,24492825,,33365.33865.34932.40029.46121.46630.47836.,1583791760,1&tpos=120&iw=&uxnw=&uxss=&uxct=&metr=1031&init=1&asid=-1&ssid=1722804&vcid2=381963%3A0da57b7e-dea4-11e7-9ec7-0e45ba4fa8d8&cr=]]></Impression>
+<Impression id="5647a45a-baf4-48ac-bcec-63595a28d3aa"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=15000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_IMPRESSION&adId=40212592&responseFormat=VMAP&id=5647a45a-baf4-48ac-bcec-63595a28d3aa&sign=iGlYpisnoyUTWufiCAswXT-JOru9niGpscu59lqsRDE]]></Impression>
+<Creatives>
+<Creative AdID="40212592" id="6415327">
+<Linear>
+<Duration>00:00:15</Duration>
+<TrackingEvents>
+<Tracking event="complete"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=40212592&reid=24492825&arid=0&auid=&cn=complete&et=i&_cc=&tpos=120&init=1&iw=&uxnw=&uxss=&uxct=&metr=1031]]></Tracking>
+<Tracking id="1c2841ba-b79c-4cce-b84d-8b3998c68b33" event="complete"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=15000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_COMPLETE&adId=40212592&responseFormat=VMAP&id=1c2841ba-b79c-4cce-b84d-8b3998c68b33&sign=XKNF3d8Y6pgfxxivKN_xoYCX3Ppl7CGL6DUHXe0uUJ0]]></Tracking>
+<Tracking event="firstQuartile"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=40212592&reid=24492825&arid=0&auid=&cn=firstQuartile&et=i&_cc=&tpos=120&init=1&iw=&uxnw=&uxss=&uxct=&metr=1031]]></Tracking>
+<Tracking id="d49371e5-9638-4f61-bf90-fc0d98bec15b" event="firstQuartile"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=15000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_FIRST_QUARTILE&adId=40212592&responseFormat=VMAP&id=d49371e5-9638-4f61-bf90-fc0d98bec15b&sign=j6PDaOHSvVbN4zcT5RKoMokdS21JpGtx4lzXIse5-_g]]></Tracking>
+<Tracking event="midpoint"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=40212592&reid=24492825&arid=0&auid=&cn=midPoint&et=i&_cc=&tpos=120&init=1&iw=&uxnw=&uxss=&uxct=&metr=1031]]></Tracking>
+<Tracking id="125909cd-b881-4039-a271-2282b0c14aa4" event="midpoint"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=15000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_MIDPOINT&adId=40212592&responseFormat=VMAP&id=125909cd-b881-4039-a271-2282b0c14aa4&sign=6mU9XIXh30A26c_m7RKAbatOvJuQ2HQZlPMHZsGih68]]></Tracking>
+<Tracking event="thirdQuartile"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=40212592&reid=24492825&arid=0&auid=&cn=thirdQuartile&et=i&_cc=&tpos=120&init=1&iw=&uxnw=&uxss=&uxct=&metr=1031]]></Tracking>
+<Tracking id="0a2fc218-b7cd-4e21-a370-450b8348c526" event="thirdQuartile"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=15000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_THIRD_QUARTILE&adId=40212592&responseFormat=VMAP&id=0a2fc218-b7cd-4e21-a370-450b8348c526&sign=H4neGP6lvOcd6x5YUGbjxqvNH9nH4TkmNDN60qZahGo]]></Tracking>
+</TrackingEvents>
+<VideoClicks>
+<ClickTracking id="FWc_40212592.0"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=40212592&reid=24492825&arid=0&auid=&cn=defaultClick&et=c&_cc=&tpos=120&cr=]]></ClickTracking>
+</VideoClicks>
+<MediaFiles>
+<MediaFile height="0" width="0" type="application/x-mpegURL" id="24492846" delivery="streaming"><![CDATA[http://d82gzzcvbqfq.cloudfront.net/8770/bS8xLzM4MTk2My85NS82NDE1MzI3LzFSUkIwMzMzMDAwSF8xNTgyNTY4MDQxX2hsc18xODA0/Mzc4XzIyMC8xUlJCMDMzMzAwMEhfMTU4MjU2ODA0MV9obHNfMTgwNDM3OF8yMjAubTN1OA==/sling-hls/ad.m3u8]]></MediaFile>
+</MediaFiles>
+</Linear>
+</Creative>
+</Creatives>
+</InLine>
+</Ad>
+<Ad id="38508398.140521293960192" sequence="2">
+<InLine>
+<AdSystem>FreeWheel</AdSystem>
+<AdTitle>Mercari_Mercari_1Q20_Sling_DR_DM#154841_3.9-3.15</AdTitle>
+<Error><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=38508398&reid=23407179&arid=0&iw=&uxnw=&uxss=&uxct=&et=e&cn=%5BERRORCODE%5D]]></Error>
+<Impression id="FWi_38508398.0"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=38508398&reid=23407179&arid=0&auid=&cn=defaultImpression&et=i&_cc=38508398,23407179,,33365.33865.34932.40029.46121.46630.47836.,1583791760,1&tpos=120&iw=&uxnw=&uxss=&uxct=&metr=1031&init=1&asid=-1&ssid=1722804&vcid2=381963%3A0da57b7e-dea4-11e7-9ec7-0e45ba4fa8d8&cr=]]></Impression>
+<Impression id="a51827b0-6173-4bc7-8d4a-5b2b47c5195b"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=30000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_IMPRESSION&adId=38508398&responseFormat=VMAP&id=a51827b0-6173-4bc7-8d4a-5b2b47c5195b&sign=nLYB6vv82KkIyN7S1jJS8PdrCtuVLrqko_9sup62HKM]]></Impression>
+<Creatives>
+<Creative AdID="38508398" id="6226105">
+<Linear>
+<Duration>00:00:30</Duration>
+<TrackingEvents>
+<Tracking event="complete"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=38508398&reid=23407179&arid=0&auid=&cn=complete&et=i&_cc=&tpos=120&init=1&iw=&uxnw=&uxss=&uxct=&metr=1031]]></Tracking>
+<Tracking id="1ea4533c-fa69-4828-a79c-39363c42e571" event="complete"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=30000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_COMPLETE&adId=38508398&responseFormat=VMAP&id=1ea4533c-fa69-4828-a79c-39363c42e571&sign=UAqcC0tDGNlNsft3PHKH9x6w3iopR4vGI4HruA2BZUE]]></Tracking>
+<Tracking event="firstQuartile"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=38508398&reid=23407179&arid=0&auid=&cn=firstQuartile&et=i&_cc=&tpos=120&init=1&iw=&uxnw=&uxss=&uxct=&metr=1031]]></Tracking>
+<Tracking id="29428584-8399-4221-b9ea-3f689d331092" event="firstQuartile"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=30000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_FIRST_QUARTILE&adId=38508398&responseFormat=VMAP&id=29428584-8399-4221-b9ea-3f689d331092&sign=O4tDHuzNWjXRaig1_c2G7srhV9jH2m44wJ_Q3lZkleQ]]></Tracking>
+<Tracking event="midpoint"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=38508398&reid=23407179&arid=0&auid=&cn=midPoint&et=i&_cc=&tpos=120&init=1&iw=&uxnw=&uxss=&uxct=&metr=1031]]></Tracking>
+<Tracking id="b83790a7-08f3-454e-86b3-68311b30d55b" event="midpoint"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=30000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_MIDPOINT&adId=38508398&responseFormat=VMAP&id=b83790a7-08f3-454e-86b3-68311b30d55b&sign=4lMy19jbLrfUkBg-lusBqfmUTIxOpZymk6XAHsxLLAY]]></Tracking>
+<Tracking event="thirdQuartile"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=38508398&reid=23407179&arid=0&auid=&cn=thirdQuartile&et=i&_cc=&tpos=120&init=1&iw=&uxnw=&uxss=&uxct=&metr=1031]]></Tracking>
+<Tracking id="30edd245-fcf8-437e-b1df-67250add7e40" event="thirdQuartile"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=30000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_THIRD_QUARTILE&adId=38508398&responseFormat=VMAP&id=30edd245-fcf8-437e-b1df-67250add7e40&sign=u9QNgiRdu9lJe5LXzzw3at-vP5cSJazSAtXVqFIA4p8]]></Tracking>
+</TrackingEvents>
+<VideoClicks>
+<ClickTracking id="FWc_38508398.0"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=38508398&reid=23407179&arid=0&auid=&cn=defaultClick&et=c&_cc=&tpos=120&cr=]]></ClickTracking>
+</VideoClicks>
+<MediaFiles>
+<MediaFile height="0" width="0" type="application/x-mpegURL" id="23407200" delivery="streaming"><![CDATA[http://d82gzzcvbqfq.cloudfront.net/3ee9/bS8xLzM4MTk2My81Ny82MjI2MTA1L1pCUkszOTU0VUhfMTU3OTA0MjI1NF9obHNfMTcz/ODQ5OV8yMjAvWkJSSzM5NTRVSF8xNTc5MDQyMjU0X2hsc18xNzM4NDk5XzIyMC5tM3U4/sling-hls/ad.m3u8]]></MediaFile>
+</MediaFiles>
+</Linear>
+</Creative>
+</Creatives>
+</InLine>
+</Ad>
+</VAST>
+</vmap:VASTAdData>
+</vmap:AdSource>
+<vmap:TrackingEvents>
+<vmap:Tracking event="breakStart"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&cn=slotImpression&et=i&tpos=120&init=1&slid=1]]></vmap:Tracking>
+</vmap:TrackingEvents>
+</vmap:AdBreak>
+<vmap:AdBreak timeOffset="00:10:00.000" breakId="2" breakType="linear">
+<vmap:AdSource allowMultipleAds="true" followRedirects="true" id="3">
+<vmap:VASTAdData>
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:noNamespaceSchemaLocation="vast.xsd">
+<Ad id="40212592.140521293954816" sequence="1">
+<InLine>
+<AdSystem>FreeWheel</AdSystem>
+<AdTitle>RedRobin_RedRobin_1Q20_Sling_DR_DM#159787_15sCreative_3.9-3.15</AdTitle>
+<Error><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=40212592&reid=24492825&arid=1&iw=&uxnw=&uxss=&uxct=&et=e&cn=%5BERRORCODE%5D]]></Error>
+<Impression id="FWi_40212592.0"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=40212592&reid=24492825&arid=1&auid=&cn=defaultImpression&et=i&_cc=40212592,24492825,,33365.33865.34932.40029.46630.46944.47836.,1583791760,1&tpos=600&iw=&uxnw=&uxss=&uxct=&metr=1031&init=1&asid=-1&ssid=1722804&vcid2=381963%3A0da57b7e-dea4-11e7-9ec7-0e45ba4fa8d8&cr=]]></Impression>
+<Impression id="f2c520a8-78c1-4b7c-aa34-b654dfa04447"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=15000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_IMPRESSION&adId=40212592&responseFormat=VMAP&id=f2c520a8-78c1-4b7c-aa34-b654dfa04447&sign=2gl66MDw_-Di_o2_WTJUjI4hodnU_B9fHlubsOwr5lc]]></Impression>
+<Creatives>
+<Creative AdID="40212592" id="6415327">
+<Linear>
+<Duration>00:00:15</Duration>
+<TrackingEvents>
+<Tracking event="complete"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=40212592&reid=24492825&arid=1&auid=&cn=complete&et=i&_cc=&tpos=600&init=1&iw=&uxnw=&uxss=&uxct=&metr=1031]]></Tracking>
+<Tracking id="bb04084f-9358-4386-a237-a100e9300bcb" event="complete"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=15000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_COMPLETE&adId=40212592&responseFormat=VMAP&id=bb04084f-9358-4386-a237-a100e9300bcb&sign=N6kELG20U1SRDU06i6s_RUAKRNCF83oPpYWW69kLLB4]]></Tracking>
+<Tracking event="firstQuartile"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=40212592&reid=24492825&arid=1&auid=&cn=firstQuartile&et=i&_cc=&tpos=600&init=1&iw=&uxnw=&uxss=&uxct=&metr=1031]]></Tracking>
+<Tracking id="d37eb28b-e34e-4794-be41-27790a689a4b" event="firstQuartile"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=15000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_FIRST_QUARTILE&adId=40212592&responseFormat=VMAP&id=d37eb28b-e34e-4794-be41-27790a689a4b&sign=75uggtsLG75pUcxRsm65LQqiipuZP_1No5BODesNpUc]]></Tracking>
+<Tracking event="midpoint"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=40212592&reid=24492825&arid=1&auid=&cn=midPoint&et=i&_cc=&tpos=600&init=1&iw=&uxnw=&uxss=&uxct=&metr=1031]]></Tracking>
+<Tracking id="ae32cf10-b39a-4cac-9d31-8515f0ee66e9" event="midpoint"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=15000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_MIDPOINT&adId=40212592&responseFormat=VMAP&id=ae32cf10-b39a-4cac-9d31-8515f0ee66e9&sign=4hGwcQ82EPRfIXnCTIQJti7STlZ5QANN7Pq1afEtxV8]]></Tracking>
+<Tracking event="thirdQuartile"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=40212592&reid=24492825&arid=1&auid=&cn=thirdQuartile&et=i&_cc=&tpos=600&init=1&iw=&uxnw=&uxss=&uxct=&metr=1031]]></Tracking>
+<Tracking id="b6ae11bf-121a-4853-8575-157762261967" event="thirdQuartile"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=15000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_THIRD_QUARTILE&adId=40212592&responseFormat=VMAP&id=b6ae11bf-121a-4853-8575-157762261967&sign=Aw7AZj2TXLsRT6I2RsFZH79VA-4JsxYGa4F_ChOxpSQ]]></Tracking>
+</TrackingEvents>
+<VideoClicks>
+<ClickTracking id="FWc_40212592.1"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=40212592&reid=24492825&arid=1&auid=&cn=defaultClick&et=c&_cc=&tpos=600&cr=]]></ClickTracking>
+</VideoClicks>
+<MediaFiles>
+<MediaFile height="0" width="0" type="application/x-mpegURL" id="24492846" delivery="streaming"><![CDATA[http://d82gzzcvbqfq.cloudfront.net/8770/bS8xLzM4MTk2My85NS82NDE1MzI3LzFSUkIwMzMzMDAwSF8xNTgyNTY4MDQxX2hsc18xODA0/Mzc4XzIyMC8xUlJCMDMzMzAwMEhfMTU4MjU2ODA0MV9obHNfMTgwNDM3OF8yMjAubTN1OA==/sling-hls/ad.m3u8]]></MediaFile>
+</MediaFiles>
+</Linear>
+</Creative>
+</Creatives>
+</InLine>
+</Ad>
+<Ad id="38697725.140522552493056" sequence="2">
+<InLine>
+<AdSystem>FreeWheel</AdSystem>
+<AdTitle>SlingTV_Movie Promos_0001_The Great War</AdTitle>
+<Error><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=38697725&reid=24816298&arid=0&iw=&uxnw=&uxss=&uxct=&et=e&cn=%5BERRORCODE%5D]]></Error>
+<Impression id="FWi_38697725.0"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=38697725&reid=24816298&arid=0&auid=&cn=defaultImpression&et=i&_cc=38697725,24816298,,33365.33865.34932.40029.46630.46944.47836.,1583791760,1&tpos=600&iw=&uxnw=&uxss=&uxct=&metr=1031&init=1&asid=-1&ssid=1722804&vcid2=381963%3A0da57b7e-dea4-11e7-9ec7-0e45ba4fa8d8&cr=]]></Impression>
+<Impression id="bef7d13b-fbf5-4f33-bc3e-49595369545a"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=30000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_IMPRESSION&adId=38697725&responseFormat=VMAP&id=bef7d13b-fbf5-4f33-bc3e-49595369545a&sign=WnverOZOKBNQBxA2bCZ5tioRLjIctNLfDb8d8IAXHNc]]></Impression>
+<Creatives>
+<Creative AdID="38697725" id="6474166">
+<Linear>
+<Duration>00:00:30</Duration>
+<TrackingEvents>
+<Tracking event="complete"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=38697725&reid=24816298&arid=0&auid=&cn=complete&et=i&_cc=&tpos=600&init=1&iw=&uxnw=&uxss=&uxct=&metr=1031]]></Tracking>
+<Tracking id="2c0c193c-9ff3-49c0-9a9d-978755ef2dfa" event="complete"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=30000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_COMPLETE&adId=38697725&responseFormat=VMAP&id=2c0c193c-9ff3-49c0-9a9d-978755ef2dfa&sign=iMMOcBZfHFovMYpACuVggCGSwrhy2LVSc3ywTvTuPZg]]></Tracking>
+<Tracking event="firstQuartile"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=38697725&reid=24816298&arid=0&auid=&cn=firstQuartile&et=i&_cc=&tpos=600&init=1&iw=&uxnw=&uxss=&uxct=&metr=1031]]></Tracking>
+<Tracking id="16421d6a-6438-4d09-bad3-5eb77e80c79b" event="firstQuartile"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=30000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_FIRST_QUARTILE&adId=38697725&responseFormat=VMAP&id=16421d6a-6438-4d09-bad3-5eb77e80c79b&sign=IB5v49JrWDsbK1-1Oh8t12l_tGCGngObX5F4gtECtUU]]></Tracking>
+<Tracking event="midpoint"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=38697725&reid=24816298&arid=0&auid=&cn=midPoint&et=i&_cc=&tpos=600&init=1&iw=&uxnw=&uxss=&uxct=&metr=1031]]></Tracking>
+<Tracking id="d3931835-993f-4542-8c5a-fbf670e64a41" event="midpoint"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=30000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_MIDPOINT&adId=38697725&responseFormat=VMAP&id=d3931835-993f-4542-8c5a-fbf670e64a41&sign=z9ch3zDxmWMtbVu2Bg-S3-GGgFm5NERvg32sjWliJEI]]></Tracking>
+<Tracking event="thirdQuartile"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=38697725&reid=24816298&arid=0&auid=&cn=thirdQuartile&et=i&_cc=&tpos=600&init=1&iw=&uxnw=&uxss=&uxct=&metr=1031]]></Tracking>
+<Tracking id="0396a0c1-c29e-4237-a9fc-f8862e2785d5" event="thirdQuartile"><![CDATA[http://p-cg61-beaconserver.movetv.com/adapt?ts=1583791763658&duration=30000&adSystem=FreeWheel&topLevelAdSystem=FreeWheel&translation=vod&event=USED_THIRD_QUARTILE&adId=38697725&responseFormat=VMAP&id=0396a0c1-c29e-4237-a9fc-f8862e2785d5&sign=FmiW55tvh4Q7GMXdrlnn73OOE3-8UKgonCRrcP1Mt58]]></Tracking>
+</TrackingEvents>
+<VideoClicks>
+<ClickTracking id="FWc_38697725.0"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&r=381963&adid=38697725&reid=24816298&arid=0&auid=&cn=defaultClick&et=c&_cc=&tpos=600&cr=]]></ClickTracking>
+</VideoClicks>
+<MediaFiles>
+<MediaFile height="0" width="0" type="application/x-mpegURL" id="24816319" delivery="streaming"><![CDATA[http://d82gzzcvbqfq.cloudfront.net/9ba7/bS8xLzM4MTk2My81NC82NDc0MTY2L0RPTV9BQ1RfQ0NBX01vdmllLVByb21vX1VQU19UaGUtR3JlYXQtV2FyXzIwMjAtMDItMjVfMTU4MzQzNDQ0Nl9obHNfMTgy/NDU5M18yMjAvRE9NX0FDVF9DQ0FfTW92aWUtUHJvbW9fVVBTX1RoZS1HcmVhdC1XYXJfMjAyMC0wMi0yNV8xNTgzNDM0NDQ2X2hsc18xODI0NTkzXzIyMC5tM3U4/sling-hls/ad.m3u8]]></MediaFile>
+</MediaFiles>
+</Linear>
+</Creative>
+</Creatives>
+</InLine>
+</Ad>
+</VAST>
+</vmap:VASTAdData>
+</vmap:AdSource>
+<vmap:TrackingEvents>
+<vmap:Tracking event="breakStart"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=a139&n=381963%3B381963%3B376521%3B510839%3B512029%3B515018&t=1583791760497391005&f=&cn=slotImpression&et=i&tpos=600&init=1&slid=2]]></vmap:Tracking>
+</vmap:TrackingEvents>
+</vmap:AdBreak>
+</vmap:VMAP>
+
